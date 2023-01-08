@@ -3,7 +3,7 @@
 context ('My Second Test',()=>{
     //describe yerine context kullanilabilinir
     beforeEach('Her testten once calisacak',()=>{
-        cy.visit('https://www.google.com/')
+        cy.visit('/')//cypress.config.js ten baseurl'den geldi adres
 
     })
     it('URL Test',()=>{
@@ -18,10 +18,17 @@ context ('My Second Test',()=>{
     })
 
     it('Search Test',()=>{
+        cy.get('[name="q"]').type('Cypress.io{enter}')
+
+        //get():locate aliyoruz
+        //type():metin gonderiyoruz
+        //{enter}:Enter tusuna bas
+
 
     })
 
     it('Search Test',()=>{
+        cy.get('.gLFyf', {timeout: 10000}).type('Cypress.io{enter}')
 
     })
 })
