@@ -9,3 +9,4 @@ describe ('',()=>{
 
     })
 })
+//npx cypress open ile browseri acmaliyiz

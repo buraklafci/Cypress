@@ -14,7 +14,13 @@ describe ('My First Test',()=>{
         //should('include','google'):google icerir mi
     })
 
-    it('',()=>{
+    it('Title Test',()=>{
+        cy.visit('https://www.google.com')
+        cy.title().should('include','Google')
+        //title(): sayfanin title'ini alir
+
+        cy.title().should('equal','Google')
+        //equal title yazilana esitmi 
 
     })
 })
