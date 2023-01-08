@@ -31,4 +31,18 @@ context ('My Second Test',()=>{
         cy.get('.gLFyf', {timeout: 10000}).type('Cypress.io{enter}')
 
     })
+
+    it.skip('Skip',()=>{
+      //bu testi atla
+    })
+/*
+    it.only('Only',()=>{
+        //only sadece bu testu calistir
+      })
+*/
+    it('Click',()=>{
+        cy.get('.gb_d').click()
+        //click tiklam yapar
+    })
+    
 })
