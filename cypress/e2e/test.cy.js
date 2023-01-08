@@ -1,4 +1,4 @@
-/// <references type="cypress" />
+/// <reference types="cypress" />
 
 describe ('',()=>{
     it('',()=>{

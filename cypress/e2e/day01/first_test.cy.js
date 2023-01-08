@@ -7,6 +7,11 @@ describe ('My First Test',()=>{
 
         cy.visit('https://www.google.com')
         //visit(URL) urle'e git
+ 
+        cy.url().should('include','google')
+        //should assertion icin kullaniliyor
+        //include:icermek demek
+        //should('include','google'):google icerir mi
     })
 
     it('',()=>{
