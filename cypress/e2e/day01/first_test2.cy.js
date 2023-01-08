@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-describe ('My First Test',function(){
+describe ('My First Test',function(){//arrow function yerine function() seklinde de kullanilabilinir
     
     it('URL Test',function(){
        cy.visit('https://www.google.com')
