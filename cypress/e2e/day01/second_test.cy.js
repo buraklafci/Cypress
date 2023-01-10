@@ -10,7 +10,7 @@ context ('My Second Test',()=>{
         cy.url().should('include','google')
         cy.url().should('eq','https://www.google.com/')
 
-    })
+    }) 
 
     it('Title Test',()=>{
        cy.title().should('include','Google')
