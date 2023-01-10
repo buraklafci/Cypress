@@ -41,7 +41,7 @@ context ('My Second Test',()=>{
       })
 */
     it('Click',()=>{
-        cy.get('.gb_d').click()
+        cy.get('#gbwa').click()
         //click tiklam yapar
     })
     

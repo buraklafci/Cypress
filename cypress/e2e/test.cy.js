@@ -10,3 +10,10 @@ describe ('',()=>{
     })
 })
 //npx cypress open ile browseri acmaliyiz
+
+//ilk basta kurarken 1 kereligine asagidakileri ypmamiz gerekir
+//npm init -y 
+//npm install cypress
+//npx cypress open
+
+//https://docs.cypress.io/guides/overview/why-cypress ayrintili bilgi bulabilirsin
