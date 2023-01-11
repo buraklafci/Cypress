@@ -16,6 +16,7 @@ describe ('Login Menu Test',()=>{
         cy.get(':nth-child(4) > a > .fa').click()//logine tikla
 
         //1.yol
+        cy.get('.signup-form > h2').should('contain','New User Signup!')
         cy.contains('.signup-form > h2','New User Signup!')
         //2.yol
         cy.get('.signup-form > h2').then(emailText=>{
