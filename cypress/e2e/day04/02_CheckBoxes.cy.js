@@ -42,7 +42,7 @@ cy.get(':nth-child(1) > label > .CheckboxFilter-module__gridFilterCheckbox_9gZBK
         cy.get('input[type="checkbox"]').uncheck()
     })
 
-    it.skip('Some CheckBoxes',()=>{
+    it('Some CheckBoxes',()=>{
         cy.visit('https://www.amazon.com')
         cy.get('[class="nav-a  "]').eq(0).click()
         //1.kutuya tikla
@@ -52,13 +52,16 @@ cy.get(':nth-child(1) > label > .CheckboxFilter-module__gridFilterCheckbox_9gZBK
         //10.kutuya tikla
         cy.get('input[type="checkbox"]').eq(9).check().should('be.checked')
 
+        //cy.get('input[type="checkbox"]').eq(9).parent().should('have.class','checked')
+        //check edildiginde parent tag'inda ekstra checked diye birsey cikarsa bu sekilde de assert edilebilinir
+
         //1.tiklamasini kaldir
         cy.get('input[type="checkbox"]').eq(0).uncheck().should('not.be.checked')
         //.uncheck() :tiklamayi kaldirir
         //.should('not.be.checked'):tiklamanin kaldirildigni assert eder
     })
 
-    it('All CheckBoxes 2',()=>{
+    it.skip('All CheckBoxes 2',()=>{
         cy.visit('https://www.amazon.com')
         cy.get('[class="nav-a  "]').eq(0).click()
         //hepsine tiklayabilmek icin click()->tek bir web elemente tiklar ama
@@ -66,4 +69,6 @@ cy.get(':nth-child(1) > label > .CheckboxFilter-module__gridFilterCheckbox_9gZBK
         //YUKARDA CHECKBOX ILE YAPARKEN ATLAMA OLDU AMA BUNDA HEPSINE TIKLADI
         cy.get('input[type="checkbox"]').click({multiple:true})
     })
+
+    
 })
