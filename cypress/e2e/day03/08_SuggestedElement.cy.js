@@ -10,7 +10,5 @@ describe ('Suggested Elements',()=>{
         cy.wait(3000)
     })
 
-    it('Test Case 2',()=>{
 
-    })
 })
