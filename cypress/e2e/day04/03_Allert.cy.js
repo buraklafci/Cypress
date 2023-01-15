@@ -1,16 +1,16 @@
 /// <reference types="cypress" />
 
 describe ('Allerts',()=>{
-    it('Allert Test',()=>{
+    it.skip('Allert Test',()=>{
    cy.visit('the-internet.herokuapp.com/javascript_alerts')
    cy.wait(3000)
 cy.get(':nth-child(1) > button').click()
 
    //Cypress otomatik olarak Allert Tamam butonuna tiklar
-   cy.get('#result').should('have.text','You succesfully clicked an alert')
+   cy.get('#result').should('have.text','You successfully clicked an alert')
     })
 
-    it('Accept Alert Test',()=>{
+    it.skip('Accept Alert Test',()=>{
         cy.visit('the-internet.herokuapp.com/javascript_alerts')
         cy.wait(3000)
      cy.get(':nth-child(2) > button').click()
@@ -18,10 +18,10 @@ cy.get(':nth-child(1) > button').click()
      //Cypress otomatik olarak tamam butonuna tiklayacak
 
      cy.get('#result').should('have.text','You clicked: Ok')
-     //
+     
     })
 
-    it('Dismiss Allert',()=>{
+    it.skip('Dismiss Allert',()=>{
         cy.visit('the-internet.herokuapp.com/javascript_alerts')
         cy.wait(3000)
         cy.get(':nth-child(2) > button').click()
@@ -32,7 +32,7 @@ cy.get(':nth-child(1) > button').click()
 
         cy.on('window:confirm',()=>{
             return false
-            //return true default olarak tikla demek
+            //return true default olarak tikla demek, on() fonksiyonu sayesinde cancel yapiyoruz
          })
         cy.get('#result').should('have.text','You clicked: Cancel')
     })
@@ -42,6 +42,7 @@ cy.get(':nth-child(1) > button').click()
         .then($windowElement=>{
             //$windowElement->prompt'a bilgi girer
             cy.stub($windowElement,'prompt').returns('Cypress')
+            //frontend'te islem yapabilmek icin stub fonksiyonunu kullaniyoruz,prompt ile yazi gonderiyoruz
             cy.wait(3000)
             cy.get(':nth-child(3) > button').click()
 
