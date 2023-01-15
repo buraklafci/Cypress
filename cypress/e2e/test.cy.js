@@ -17,3 +17,5 @@ describe ('',()=>{
 //npx cypress open
 
 //https://docs.cypress.io/guides/overview/why-cypress ayrintili bilgi bulabilirsin
+
+//https://www.npmjs.com/ plugin indirilebilir
