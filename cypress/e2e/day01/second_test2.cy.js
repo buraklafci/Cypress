@@ -42,7 +42,7 @@ context ('My Second Test',()=>{
 */
     it('Click',()=>{
         cy.get('#gbwa').click()
-        //click tiklam yapar
+        //click tiklama yapar
     })
     
 })
