@@ -20,7 +20,9 @@ describe ('Scroll',()=>{
     cy.wait(4000)
     })
 
-    it('',()=>{
-
+    it.skip('Test Case2',()=>{
+        cy.visit('https://testcenter.techproeducation.com/index.php?page=hovers')
+      //  cy.get(':nth-child(25) > a').scrollIntoView()
+        cy.get('.blog-footer > :nth-child(2) > a').scrollIntoView({duration:7000})
     })
 })

@@ -11,8 +11,12 @@ cy.visit('https://www.amazon.com/deals/?_encoding=UTF8&ref_=nav_cs_gb&pf_rd_r=QH
     })
     it.only('Test Case 2',()=>{
         cy.visit('https://www.cypress.io/')
-       // cy.visit('https://docs.cypress.io/')
+        cy.wait(3000)
+        cy.visit('https://docs.cypress.io/')
+        cy.wait(3000)
         //ayni sayfa ama farkli uzantili oluncada gitmez
+
+        //NOT:YUKARDIDA ALINAN NOT GUNCELLENDIKTEN SONRA BU NEGATIF YONU GIDERILMISTIR
         
             })
 })
