@@ -29,7 +29,7 @@ describe ('Navigation',()=>{
         //sayfayi yenile
     })
 
-    it.only('Ching Navigation',()=>{
+    it('Change Navigation',()=>{
         cy.visit("https://www.koalaresorthotels.com/")
 
         cy.wait(3000)
@@ -39,5 +39,22 @@ describe ('Navigation',()=>{
         cy.go('back').go('forward').go(-1).go(1).reload(true)
         //.reload(true) :sayfayi hafizadan degil(cash'ten yapmaz),yeniden yukler
 
+    })
+    it.only('Navigator',()=>{
+        cy.visit('https://google.com')//ayni sayfadaki islemler de gecerlidir
+        //farkli sayfalarda gecerli degildir
+        cy.wait(3000)
+        cy.get('#APjFqb').type('java{enter}')
+        cy.wait(3000)
+        cy.xpath('//a[@data-hveid="CAEQAw"]').click()
+        cy.wait(3000)
+        cy.go('back')
+        cy.wait(3000)
+        cy.go(1)
+        cy.wait(3000)
+        cy.go(-1)
+        cy.go(-1)       
+        
+        
     })
 })
