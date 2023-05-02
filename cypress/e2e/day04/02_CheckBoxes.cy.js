@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 describe ('CheckBoxes',()=>{
-    it.skip('Single CheckBox',()=>{
+    it.only('Single CheckBox',()=>{
 cy.visit('https://www.amazon.com')
 
 //cy.get('[class="nav-a  "]').first().click()
@@ -32,7 +32,7 @@ cy.get(':nth-child(1) > label > .CheckboxFilter-module__gridFilterCheckbox_9gZBK
 
     })
 
-    it.skip('All CheckBoxes 1',()=>{
+    it('All CheckBoxes 1',()=>{
         cy.visit('https://www.amazon.com')
         cy.get('[class="nav-a  "]').eq(0).click()
         //butun checkboxlara tikla
