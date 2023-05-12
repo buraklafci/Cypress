@@ -59,8 +59,18 @@ uncheck().should('not.be.checked')
             cy.iframe().find('a[class="btn btn-primary btn-lg"]').click({force: true})
           })
 
-          it.only('multiple window',()=>{
+          it('multiple window-1',()=>{
            cy.visit('https://testcenter.techproeducation.com/index.php?page=multiple-windows')
+           cy.get('.example > a').invoke('removeAttr','target').click({force: true})
+           cy.get('h3').should('have.text','New Window')
          })
+         it.only('multiple window-2',()=>{
+            cy.visit('https://testcenter.techproeducation.com/index.php?page=multiple-windows')
+            cy.get('.example > a').then((element)=>{
+                const newUrl=element.prop('href')
+                cy.visit(newUrl)
+                cy.get('h3').should('contain','New Window')
+            })
+        })
 
 })
