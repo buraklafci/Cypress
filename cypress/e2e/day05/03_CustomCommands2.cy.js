@@ -9,7 +9,5 @@ describe ('Custom Command2',()=>{
    cy.screenshot()
     })
 
-    it('',()=>{
-
-    })
+   
 })

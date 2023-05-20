@@ -15,13 +15,13 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
-
+// Alternatively you can use CommonJS syntax:
+// require('./commands')
 import 'cypress-iframe';
 // or
 //require('cypress-iframe');
+import 'cypress-file-upload';
 
-// Alternatively you can use CommonJS syntax:
-// require('./commands')
 require('@cypress/xpath');
 
 require('@4tw/cypress-drag-drop')
