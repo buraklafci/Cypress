@@ -21,3 +21,6 @@ describe ('',()=>{
 //https://www.npmjs.com/ plugin indirilebilir
 
 //npx cypress run yazdıgımızda butun testlerı calıstırabılırız ve hatalarda ss alır ve butun testlerın vıdeosunu alırız
+
+//npx cypress info ile browserlar gorulebılınır ve hangı browserla calısmak ıstersek
+//npx cypress run --browser chrome komutunu yazarız
