@@ -4,7 +4,8 @@
   "description": "cypress calismalarim",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mycode" :"npx cypress run --spec cypress/e2e/day02/01_LoginTest1.cy.js"
   },
   "repository": {
     "type": "git",
