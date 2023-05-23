@@ -49,3 +49,4 @@ describe ('',()=>{
 //"mycode" :"npx cypress run --spec 'cypress/e2e/day02/01_LoginTesti1.cy.js"
 //mycode dıye komut tanımlamış olduk
 //oluşturdugumuz komutu termınalde**** npm run mycode *****ile direkt çalıştırabılırız
+
