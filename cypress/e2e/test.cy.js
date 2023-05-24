@@ -50,3 +50,7 @@ describe ('',()=>{
 //mycode dıye komut tanımlamış olduk
 //oluşturdugumuz komutu termınalde**** npm run mycode *****ile direkt çalıştırabılırız
 
+// "test-dashboard": "npx cypress run --record --key f7482507-036e-456f-9918-c4114cab002f",
+//npm run test-dashboard yazıldıgında  butun testler calısıp dashboarda gonderılecek
+//"dashboard_day02": "npx cypress run --spec cypress/e2e/day02/01_LoginTest1.cy.js --record --key f7482507-036e-456f-9918-c4114cab002f"
+//npm run dashboard_day02 sadece yazılan test calısıp gonderılecek 

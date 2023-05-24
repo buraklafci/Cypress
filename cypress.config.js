@@ -8,5 +8,11 @@ module.exports = defineConfig({
     },
     baseUrl : "https://www.google.com",
     projectId: "kvem6u",   //cloud ıcın buraya herkes ıcın farklı olan key buraya eklendı 
+  
+    "video":false, //testlerde videoları kaydetmiyor default olarak true video kaydedilir
+  
+    //"retries":2
+    //test FAİL oldugunda onu kac kere daha calıstırması gerektıgını belırtır
+
   },
 });

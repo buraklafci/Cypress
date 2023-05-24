@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "mycode": "npx cypress run --spec cypress/e2e/day02/01_LoginTest1.cy.js"
+    "mycode": "npx cypress run --spec cypress/e2e/day02/01_LoginTest1.cy.js",
+    "test-dashboard": "npx cypress run --record --key f7482507-036e-456f-9918-c4114cab002f",
+    "dashboard_day02": "npx cypress run --spec cypress/e2e/day02/01_LoginTest1.cy.js --record --key f7482507-036e-456f-9918-c4114cab002f"
   },
   "repository": {
     "type": "git",
