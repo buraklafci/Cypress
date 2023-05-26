@@ -1,0 +1,40 @@
+[{
+    "id":1,
+    "firstName": "burak",
+    "lastName": "lara",
+    "gender": "male",
+    "age": 25,
+    "address": {
+        "streetAddress": "26 colony",
+        "city": "sddsd",
+        "state": "Gujarat",
+        "postalCode": "354323"
+    }},
+    {"id":2,
+     "firstName": "durak",
+     "lastName": "aara",
+     "gender": "male",
+     "age": 25,
+     "address": {
+                "streetAddress": "26 colony",
+                "city": "Ahefhdfmdabad",
+                "state": "Gujarat",
+                "postalCode": "354323"
+            }}
+            
+      ,
+      {"id":3,
+            "firstName": "surak",
+            "lastName": "fara",
+            "gender": "male",
+            "age": 25,
+            "address": {
+                "streetAddress": "26 colony",
+                "city": "Ahemdabad",
+                "state": "Gujarat",
+                "postalCode": "354323"
+            }
+            }
+        ]
+    
+    

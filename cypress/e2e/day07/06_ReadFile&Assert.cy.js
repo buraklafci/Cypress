@@ -1,12 +1,13 @@
 /// <reference types="cypress" />
 
-describe ('Write Read File',()=>{
-    it('Write File',()=>{
-cy.writeFile('./cypress/e2e/day07/05_UserData.json',{ name:'Burak', email:'burak@gmail.com'})
+describe ('Read File Assert',()=>{
+    it('Asssert',()=>{
 
-cy.readFile('./cypress/e2e/day07/05_UserData.json').then((user)=>{
-    expect(user.name).eq('Burak')
-    expect(user.email).eq('burak@gmail.com')
+cy.readFile('./cypress/fixtures/userDataa.json').then((userData)=>{
+    expect(userData[1].firstName).to.equal('durak')
+    expect(userData[0].lastName).to.equal('lara')
+    expect(userData[2].address.city).to.equal('Ahemdabad')
+    
 })
 })
 
