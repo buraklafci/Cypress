@@ -16,14 +16,16 @@ describe ('HotelMyCamp',()=>{
 
         //cy.visit('https://www.hotelmycamp.com/')
         //cy.visit(this.data.url)
-        homePage.homePage()
+        homePage.homePage()//pom'a uygun olarak HomePage classından aldık.Selenyumdakı Page sayfası gibi
+        //locateler orada bukunuyor
 
         //cy.get('#navLogon > .nav-link').click()
         homePage.login()
        
         //cy.get('#UserName').type('manager')
         //cy.get('#UserName').type(this.data.userName)
-        loginPage.userName().type(this.data.userName)
+        loginPage.userName().type(this.data.userName)//pom'a uygun olarak dataları fixture ıcerısındekı
+        //HotelMyCamp.json dan aldık.Selenıum'dakı configuration gibi
 
         //cy.get('#Password').type('Manager1!')
         //cy.get('#Password').type(this.data.password)
