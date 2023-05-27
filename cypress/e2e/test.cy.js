@@ -9,6 +9,8 @@ describe ('',()=>{
 
     })
 })
+
+
 //npx cypress open ile browseri acmaliyiz
 
 //ilk basta kurarken 1 kereligine asagidakileri ypmamiz gerekir
